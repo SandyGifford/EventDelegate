@@ -17,6 +17,10 @@ export default class EventDelegate<D> {
             this.listeners.splice(index, 1);
     }
 
+    public clearEventListeners(): void {
+        this.listeners = [];
+    }
+
     public trigger(data: D) {
         this.listeners.forEach(listener => listener(data));
     }
