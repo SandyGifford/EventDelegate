@@ -3,6 +3,7 @@ export default class EventDelegate<D> {
     private listeners;
     addEventListener(listener: GenericEventListener<D>): void;
     removeEventListener(listener: GenericEventListener<D>): void;
+    clearEventListeners(): void;
     trigger(data: D): void;
     getListenerCount(): number;
     hasListeners(): boolean;

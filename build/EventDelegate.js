@@ -15,6 +15,9 @@ var EventDelegate = (function () {
         if (index !== -1)
             this.listeners.splice(index, 1);
     };
+    EventDelegate.prototype.clearEventListeners = function () {
+        this.listeners = [];
+    };
     EventDelegate.prototype.trigger = function (data) {
         this.listeners.forEach(function (listener) { return listener(data); });
     };
