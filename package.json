@@ -1,6 +1,6 @@
 {
   "name": "event-delegate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "typings": "build/EventDelegate.d.ts",
   "main": "build/EventDelegate.js",
@@ -10,14 +10,14 @@
     "test:watch": "jest --watch",
     "build": "npm run clean; tsc;"
   },
-  "author": "",
+  "author": "Sandy Gifford",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
-    "@types/jest": "^22.1.4",
-    "jest": "^22.4.2",
-    "ts-jest": "^22.4.0",
-    "typescript": "^2.7.2"
+    "@types/jest": "^22.2.3",
+    "jest": "^22.4.3",
+    "ts-jest": "^22.4.5",
+    "typescript": "^2.8.3"
   },
   "jest": {
     "testRegex": ".*\\/__tests__\\/.*\\.test\\.(ts|js)$",
